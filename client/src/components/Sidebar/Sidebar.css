@@ -1,0 +1,21 @@
+@import url("../../assets/colors.css");
+
+.side_bar {
+  z-index: 1;
+  min-height: 92.1vh;
+  background: linear-gradient(120deg, var(--primary-color), var(--secondary-color));
+}
+
+.chat_details h2 {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.users h4 {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-bottom: 20px;
+}

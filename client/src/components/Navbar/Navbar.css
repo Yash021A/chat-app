@@ -1,0 +1,18 @@
+@import url("../../assets/colors.css");
+
+.logout_btn {
+  width: 7em;
+  border: 1px solid;
+  background: var(--tertiary-color);
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  padding: 6px 2px;
+}
+.logout_btn:hover {
+  border-color: var(--tertiary-color);
+  transition: 0.5s;
+}

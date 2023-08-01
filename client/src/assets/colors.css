@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #2980b9;
+  --secondary-color: #8e44ad;
+  --tertiary-color: #2691d9;
+
+  --meta-data-color: #777777;
+  --blue-color: #7386ff;
+
+  /* Messages */
+  --bot-message: #e6e9ff;
+  --you-message: #73ff88;
+  --other-message: #9af9f0;
+}

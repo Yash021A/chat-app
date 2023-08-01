@@ -1,0 +1,95 @@
+@import url("../../assets/colors.css");
+
+.chat_section {
+  max-height: 92.1vh;
+  background-color: white;
+}
+.chat-messages {
+  padding: 30px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat-messages .message {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--blue-color);
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+  margin-left: 1em;
+  color: var(--meta-data-color);
+}
+
+.msg-field-container {
+  width: auto;
+  margin-left: -12px;
+  background-color: var(--blue-color);
+  padding: 1em;
+}
+
+.msg_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  text-indent: 1em;
+  margin: 0 5px;
+}
+#send_btn {
+  width: 7em;
+  border: 1px solid;
+  background: var(--tertiary-color);
+  border-radius: 50px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  padding: 6px 2px;
+}
+
+#send_btn:hover {
+  border-color: var(--tertiary-color);
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 760px) {
+  .msg-field-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .msg-field-container {
+    width: 102%;
+  }
+}
+
+#you {
+  background-color: var(--you-message);
+  margin-left: 50%;
+}
+#bot {
+  background-color: var(--bot-message);
+  width: 100%;
+}
+#other {
+  background-color: var(--other-message);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
