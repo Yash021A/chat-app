@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import Chats from "./../Chats/Chats";
 import "./Login.css";
 
-const socket = io.connect("http://localhost:3011");
+const socket = io.connect("https://yash-chat-app-ultra-server.onrender.com");
 
 const Login = () => {
   const [username, setUsername] = useState("");
