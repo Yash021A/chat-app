@@ -66,6 +66,11 @@ io.on("connection", (socket) => {
   });
 });
 
+
+app.get("/", (req, res) => {
+  res.send(`<p>Server Started at URL:${io._opts.cors.origin} & PORT${PORT}</p> \n `);
+});
+
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
