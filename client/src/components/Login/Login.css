@@ -94,3 +94,37 @@ form .txt_field {
   border-color: var(--tertiary-color);
   transition: 0.5s;
 }
+
+
+.server-info {
+  color: white;
+  font-size: 1.2em;
+  padding: 1.2em;
+  padding-left: 85%;
+  display: flex;
+  list-style: none;
+}
+
+.status {
+  &.active:before {
+    background-color: #94e185;
+    border-color: #78d965;
+    box-shadow: 0px 0px 4px 1px #94e185;
+  }
+
+  &.dead:before {
+    background-color: #c9404d;
+    border-color: #c42c3b;
+    box-shadow: 0px 0px 4px 1px #c9404d;
+  }
+
+  &:before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+  }
+}
