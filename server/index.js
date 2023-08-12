@@ -1,5 +1,6 @@
 const express = require("express");
 const http = require("http");
+const path = require("path");
 const { Server } = require("socket.io");
 const cors = require("cors");
 const { userJoin, getRoomUsers, userLeave } = require("./utils/users");
@@ -66,9 +67,9 @@ io.on("connection", (socket) => {
   });
 });
 
-
+const full_path = path.join(__dirname + "/public/index.html");
 app.get("/", (req, res) => {
-  res.send(`<p>Server Started at URL:${io._opts.cors.origin} & PORT${PORT}</p> \n `);
+ res.sendFile(full_path);
 });
 
 app.get("/status", (req, res) => {
